@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional & Creative Webpage</title>
+    <style>
+        /* General styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: lightsalmon;
+            color: #333;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3, h4, h5, h6 {
+            color: #333;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            padding: 10px 20px;
+            background-color: lightblue;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+        }
+        p {
+            margin-bottom: 20px;
+            padding: 15px 20px;
+            border-radius: 8px;
+        }
+        .separator {
+            border-top: 1px solid navy;
+            margin: 20px 0;
+        }
+
+        /* Different background colors for paragraphs */
+        .bg-blue {
+            background-color: #b3d9ff;
+        }
+        .bg-green {
+            background-color: #b3ffb3;
+        }
+        .bg-yellow {
+            background-color: #ffffb3;
+        }
+        .bg-purple {
+            background-color: #e6ccff;
+        }
+        .bg-orange {
+            background-color: #ffcc99;
+        }
+
+        /* Animation for moving text */
+        @keyframes moveText {
+            0% {
+                transform: translateX(0);
+            }
+            50% {
+                transform: translateX(10px);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+        .moving-text {
+            animation: moveText 3s infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to My Webpage</h1>
+        <p class="bg-blue">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p class="bg-green">Suspendisse potenti. Nullam euismod, justo vel aliquet.</p>
+        <p class="bg-yellow">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p>
+        <p class="bg-purple">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+        <p class="bg-orange">Donec nec justo eu felis facilisis fermentum.</p>
+        <div class="separator"></div>
+        <h2 class="moving-text">Check out my awesome content!</h2>
+    </div>
+</body>
+</html>
