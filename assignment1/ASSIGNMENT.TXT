@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional & Creative Webpage</title>
+    <style>
+        /* General styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: lightsalmon;
+            /* Requirement 2: Entire webpage background should be lightsalmon */
+            color: #333;
+            line-height: 1.6;
+            overflow-x: hidden;
+            /* Prevent horizontal scroll */
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: #333;
+            margin-top: 40px;
+            /* Increased margin */
+            margin-bottom: 20px;
+            /* Increased margin */
+            padding: 10px 20px;
+            background-color: lightblue;
+            /* Requirement 4: Each heading with different background */
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+        }
+
+        p {
+            margin-bottom: 20px;
+            padding: 15px 20px;
+            border-radius: 8px;
+        }
+
+        .separator {
+            border-top: 1px solid navy;
+            margin: 20px 0;
+        }
+
+        /* Different background colors for paragraphs */
+        .bg-blue {
+            background-color: #b3d9ff;
+        }
+
+        .bg-green {
+            background-color: #b3ffb3;
+        }
+
+        .bg-yellow {
+            background-color: #ffffb3;
+        }
+
+        .bg-purple {
+            background-color: #e6ccff;
+        }
+
+        .bg-orange {
+            background-color: #ffcc99;
+        }
+
+        /* Animation for moving text */
+        @keyframes moveText {
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(5px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        #moving-text {
+            animation: moveText 3s infinite;
+            /* Requirement 1: Top moving text */
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            padding: 20px 0;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            /* Text shadow for better visibility */
+        }
+
+        /* Customized separator */
+        .separator {
+            width: 100%;
+            height: 1px;
+            background-color: #ccc;
+            margin: 20px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .separator::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60%;
+            height: 100%;
+            background: linear-gradient(to right, transparent, #ccc, transparent);
+        }
+    </style>
+</head>
+
+<body>
+    <CENTER><h1 id="moving-text"> NEWFRONT END BATCH WILL START FROM APRIL 2024 </h1></CENTER>
+
+    <div class="container">
+        <!-- Headings and paragraphs -->
+        <h2>Heading 1</h2>
+        <p class="bg-blue">This is the first paragraph of Heading 1. Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit. Nullam vestibulum purus vel justo dictum, vel accumsan velit cursus. Mauris ac diam eu metus consequat
+            feugiat.</p>
+        <div class="separator"></div>
+        <p class="bg-blue">This is the second paragraph of Heading 1. Donec sed semper magna, id varius risus.
+            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+
+        <h3>Heading 2</h3>
+        <p class="bg-green">This is the first paragraph of Heading 2. Integer ut magna a sapien euismod pellentesque.
+            Fusce ultrices nulla vitae mauris vehicula, eget auctor orci vehicula.</p>
+        <div class="separator"></div>
+        <p class="bg-green">This is the second paragraph of Heading 2. Proin sit amet felis auctor, fermentum dolor ut,
+            faucibus nunc. Etiam at leo id magna consequat tempor eget ut lacus.</p>
+
+        <h4>Heading 3</h4>
+        <p class="bg-yellow">This is the first paragraph of Heading 3. Ut dictum risus nec justo sollicitudin, auctor
+            finibus quam viverra. Vivamus ut nibh ut metus volutpat tristique.</p>
+        <div class="separator"></div>
+        <p class="bg-yellow">This is the second paragraph of Heading 3. Duis ut tincidunt nunc. Cras posuere nisi nec
+            metus commodo, sed euismod dui semper.</p>
+
+        <h5>Heading 4</h5>
+        <p class="bg-purple">This is the first paragraph of Heading 4. Fusce a dui sit amet elit suscipit fringilla.
+            Integer tempus interdum lorem, ut rhoncus mi bibendum eget.</p>
+        <div class="separator"></div>
+        <p class="bg-purple">This is the second paragraph of Heading 4. Sed sed magna eu tellus interdum suscipit. Nam
+            id fermentum arcu, non ullamcorper metus.</p>
+
+        <h6>Heading 5</h6>
+        <p class="bg-orange">This is the first paragraph of Heading 5. Nullam at lacus non risus feugiat hendrerit. Sed
+            euismod nisi vel lacus tempus, id consectetur libero mattis.</p>
+        <div class="separator"></div>
+        <p class="bg-orange">This is the second paragraph of Heading 5. Vivamus sodales lorem in nisi consequat, nec
+            tempus mi ullamcorper. Mauris convallis est a convallis fermentum.</p>
+    </div>
+</body>
+
+</html>
