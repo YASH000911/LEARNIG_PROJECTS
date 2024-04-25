@@ -1,0 +1,25 @@
+
+div{
+    border: 1px solid rgb(244, 238, 227);
+    
+}
+img{
+    border: 2px solid orange;
+    
+}
+.h{
+    display: inline;
+}
+.u{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -3;
+    }
+    @media (min-aspect-ratio:16/9){
+        .u{ height: auto;
+            width: 100%;
+            margin: 0;
+    
+        }
+    }
