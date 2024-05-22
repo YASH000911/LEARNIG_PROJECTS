@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(60deg, rgb(223, 209, 214), rgba(226, 169, 89, 0.445));
+}
+
+.container {
+    height: 600px;
+    width: 500px;
+    margin: 50px auto;
+    box-shadow: 0 0 15px black;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid black;
+}
+
+.container img {
+    height: 100%;
+    width:auto ;
+    transition: transform 1s; /* Smooth transition for scaling */
+}
+
+.container .text {
+    color: rgb(226, 226, 192);
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(7, 7, 7, 0.5); /* Transparent background color applied to all text */
+    transition: transform 1s, opacity 1s; /* Smooth transition for rotating and appearing */
+    opacity: 0;
+}
+
+.container .text.top, .container .text.bottom {
+    left: 25%;
+    width: 50%; /* Adjust width to make left and right edges of the same length */
+}
+
+.container .text.top {
+    top: 0;
+    transform-origin: top left;
+    transform: perspective(400px) rotateX(90deg); /* Rotate along the X-axis */
+}
+
+.container .text.right {
+    top: 25%;
+    right: 0;
+    transform-origin: top right;
+    transform: perspective(400px) rotateY(90deg); /* Rotate along the Y-axis */
+}
+
+.container .text.bottom {
+    bottom: 0;
+    transform-origin: bottom left;
+    transform: perspective(400px) rotateX(-90deg); /* Rotate along the X-axis */
+}
+
+.container .text.left {
+    top: 25%;
+    left: 0;
+    transform-origin: top left;
+    transform: perspective(400px) rotateY(-90deg); /* Rotate along the Y-axis */
+}
+
+.container:hover .text {
+    transform: perspective(400px) rotateY(0deg) rotateX(0deg); /* Rotate to show */
+    opacity: 1;
+}
+
+.container:hover img {
+    transform: scale(1.4); 
+}
+h1{
+    text-align: center;
+    color: rgba(0, 0, 0, 0.697);
+}
